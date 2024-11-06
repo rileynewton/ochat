@@ -10,10 +10,10 @@ Some upfront notes on project effort / design choices:
 
 Both Server and Client run three parallel domains, each with continuously running loops:
 
-##                            Server
+###                            Server
 ```stdin loop            read socket loop       print messages/write to socket loop```
 
-##                            Client
+###                            Client
 ```stdin loop            read socket loop       print messages/write to socket loop```
 
 # Known issues/improvements
