@@ -48,7 +48,7 @@ let clean_exit_on_interrupt string_id flow interrupted =
 
 # Typical README
 
-Requirements:
+### Requirements
 
 `ochat` is a multicore application and cannot be run on single-core devices. As these devices are pretty much limited to embedded systems these days this seems a reasonable limitation. `ochat` expects three cores.
 
