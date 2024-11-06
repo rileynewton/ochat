@@ -60,6 +60,8 @@ To run test executable: `./ochat-test`
 To run in server mode: `./ochat`
 To run in client mode: `./ochat -s localhost`
 
+### Usage
+
 Full command documentation with `--help`:
 ```
 OCHAT(1)                         Ochat Manual                         OCHAT(1)
