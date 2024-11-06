@@ -61,7 +61,7 @@ To run in server mode: `./ochat`
 To run in client mode: `./ochat -s localhost`
 
 Full command documentation with `--help`:
-
+```
 OCHAT(1)                         Ochat Manual                         OCHAT(1)
 
 NAME
@@ -114,3 +114,4 @@ BUGS
        Email bug reports to <ilswyn@gmail.com>.
 
 Ochat 0.8                                                             OCHAT(1)
+```
