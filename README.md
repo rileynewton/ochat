@@ -23,7 +23,7 @@ Both Server and Client run three parallel domains, each with continuously runnin
 * Shouldn't there be a Eio library method of handling socket_closed_unexpectedly instead of introducing an atomic?
 * Tests - I ran out of time here, got basic UNIX program tests working in test_ochat.ml. Didn't get the eio mocking working in test_eio.ml. I wanted to do some attempt at testing even if incomplete, of course this self contained program can be manually tested pretty easily, what I wrote is at least the beginning of a test framework.
 * Handling Ctrl-C.
-
+```
 (* tried to have a coordinated SIGINT handling across domains but didn't have time to get it working properly
 
 main.ml:
@@ -45,6 +45,7 @@ let clean_exit_on_interrupt string_id flow interrupted =
   (* start fiber to watch for SIGINT *)
   Eio.Switch.run ~name:"watch_for_interrupt" @@ fun sw ->
   Eio.Fiber.fork ~sw (fun () -> run_fn_in_new_domain domain_mgr (fun () -> clean_exit_on_interrupt string_id flow interrupted));
+```
 
 # Typical README
 
