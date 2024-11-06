@@ -1,0 +1,4 @@
+(library
+ (public_name ochat)
+ (name ochat)
+ (libraries eio eio_main domainslib cmdliner))
